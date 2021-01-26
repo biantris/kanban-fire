@@ -7,6 +7,18 @@ mat-toolbar > span {
   margin-left: 10px;
 }
 
+button {
+  display: flex;
+  font-size: 14px;
+  margin-left: 8px;
+  width: 60px;
+}
+
+mat-icon {
+  margin-left: 10px;
+}
+
+
 .content-wrapper {
   max-width: 1400px;
   margin: auto;
