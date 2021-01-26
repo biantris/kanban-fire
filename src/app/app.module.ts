@@ -13,11 +13,15 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { MatDialogModule } from '@angular/material/dialog';
+import { TaskComponent } from './task/task.component';
+import { TaskDialogComponent } from './task-dialog/task-dialog.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TaskComponent,
+    TaskDialogComponent
   ],
   imports: [
     BrowserModule,
