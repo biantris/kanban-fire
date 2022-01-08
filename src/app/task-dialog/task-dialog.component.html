@@ -1,22 +1,29 @@
-<mat-form-field>
+<mat-form-field style="width: 250px;">
   <mat-label>Title</mat-label>
   <input matInput ckdfocusInitial [(ngModel)]="data.task.title"/>
 </mat-form-field>
 
-<mat-form-field>
+<mat-form-field style="width: 250px;">
   <mat-label>Description</mat-label>
-  <textarea matInput [(ngModel)]="data.task.description"></textarea>
+  <textarea matInput [(ngModel)]="data.task.description" style="height: 18px;"></textarea>
 </mat-form-field>
 
 <div mat-dialog-actions>
-  <button mat-button [mat-dialog-close]="{ task: data.task }"></button>
-  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-button [mat-dialog-close]="{ task: data.task }" style="margin: 10px;">
+    Add task
+  </button>
+  <button mat-button (click)="cancel()" style="margin: 10px;">
+    Cancel
+  </button>
   <button
   *ngIf="data.enableDelete"
   mat-fab
   color="primary"
   aria-label="Delete"
-  [mat-dialog-close]="{ task: data.task, delete: true }">
-  <mat-icon>delete</mat-icon>
+  [mat-dialog-close]="{ task: data.task, delete: true }"
+  style="margin: 10px;"
+  >
+  Delete
+  <!-- <mat-icon>delete</mat-icon> -->
   </button>
 </div>

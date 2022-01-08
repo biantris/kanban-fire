@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { Task } from './task/task';
 import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
@@ -28,7 +27,7 @@ export class AppComponent {
 
   newTask(): void {
     const dialogRef = this.dialog.open(TaskDialogComponent, {
-      width: '270px',
+      width: '300px',
       data: {
         task: {},
       },
@@ -40,7 +39,7 @@ export class AppComponent {
 
   editTask(list: 'done' | 'todo' | 'inProgress', task: Task): void {
     const dialogRef = this.dialog.open(TaskDialogComponent, {
-      width: '270px',
+      width: '300px',
       data: {
         task,
         enableDelete: true,
