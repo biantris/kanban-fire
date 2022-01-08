@@ -1,22 +1,17 @@
-<mat-toolbar style="background-color: gray;">
+<mat-toolbar style="background-color: orange;">
   <mat-icon style="color: white">local_fire_department</mat-icon>
   <span style="color: white;">Kanban Fire</span>
 </mat-toolbar>
 
 <div class="content-wrapper">
-      <button (click)="newTask()" mat-raised-button color="primary" style="margin-left: 30px;">
-
+  <button (click)="newTask()" mat-raised-button color="primary" style="margin-left: 30px;">
     <mat-icon>add</mat-icon>
-      </button>
-
-
-
+  </button>
+  
   <div class="container-wrapper">
     <div class="container">
       <h2 style="margin-left: 30px;">Backlog
-        <span class="material-icons">
-          subject
-          </span>
+        <span class="material-icons">subject</span>
       </h2>
 
       <mat-card
